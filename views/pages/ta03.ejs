@@ -12,7 +12,11 @@
         <h1>
           <%= title %>
         </h1>
-        <p>This is the placeholder for Team Activity 03</p>
+        <ul>
+          <% for (let object of objects) { %>
+            <li><%= object.name %></li>
+            <% } %>
+        </ul>
       </div>
     </div>
     <div class="container">
